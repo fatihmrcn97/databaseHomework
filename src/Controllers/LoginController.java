@@ -60,7 +60,6 @@ public class LoginController implements Initializable {
 	}
 	public void signUp(ActionEvent e1) throws IOException {
 		login.getScene().getWindow().hide();
-		
 		Stage signup = new Stage();
 		Parent root = FXMLLoader.load(getClass().getResource("/FXML/SignUP.fxml"));
 		Scene scene = new Scene(root);
