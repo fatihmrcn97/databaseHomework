@@ -69,5 +69,7 @@ public class SignupController implements Initializable {
 			login.setScene(scene);
 			login.show();
 			login.setResizable(false);
+		scene.getStylesheets().add("/Controllers/style.css");
+
 	}
 }
