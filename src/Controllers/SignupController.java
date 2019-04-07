@@ -2,6 +2,9 @@ package Controllers;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 import javafx.animation.PauseTransition;
@@ -41,6 +44,7 @@ public class SignupController implements Initializable {
 	private ImageView progress;
 	@FXML
 	private PasswordField password1;
+	private PreparedStatement pst;
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
@@ -59,6 +63,19 @@ public class SignupController implements Initializable {
 			System.out.println("sign up successfuly");
 		});
 		pt.play();
+		String Insert = "INSERT INTO loginData(username,userpassword,gender,city)"
+				+"VALUES (?,?,?,?)";
+		try{
+
+			pst.setString(1, username.getText());
+			pst.setString(2, userpassword.getText());
+			pst.setString(3,getGender());
+			pst.setString(4,city.getText());
+		}catch (SQLException e1){
+			e1.printStackTrace();
+		}
+
+
 	}
 	@FXML
 	public void loginAction(ActionEvent ae2) throws IOException {
@@ -72,4 +89,14 @@ public class SignupController implements Initializable {
 		scene.getStylesheets().add("/Controllers/style.css");
 
 	}
+	public String getGender(){
+		String gen="";
+		if(male.isSelected()){
+			gen = "Male";
+		}else if(female.isSelected())
+			gen="Female";
+	return gen;
+	}
+
+
 }
