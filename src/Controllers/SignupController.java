@@ -2,9 +2,7 @@ package Controllers;
 
 import java.io.IOException;
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ResourceBundle;
 
 import javafx.animation.PauseTransition;
@@ -45,6 +43,8 @@ public class SignupController implements Initializable {
 	@FXML
 	private PasswordField password1;
 	private PreparedStatement pst;
+	private Connection connection;
+	private dbConnection con;
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
@@ -57,6 +57,10 @@ public class SignupController implements Initializable {
 	}
 	@FXML
 	public void signUP(ActionEvent ae1) {
+
+con =new dbConnection();
+
+
 		PauseTransition pt = new PauseTransition();
 		pt.setDuration(Duration.seconds(3));
 		pt.setOnFinished(e ->{
@@ -64,17 +68,25 @@ public class SignupController implements Initializable {
 		});
 		pt.play();
 		String Insert = "INSERT INTO loginData(username,userpassword,gender,city)"
-				+"VALUES (?,?,?,?)";
-		try{
+				+"VALUES (?,?,?,?,?)";
 
-			pst.setString(1, username.getText());
-			pst.setString(2, userpassword.getText());
-			pst.setString(3,getGender());
-			pst.setString(4,city.getText());
-		}catch (SQLException e1){
-			e1.printStackTrace();
+		connection=con.getConnection();
+		try {
+			pst = connection.prepareStatement(Insert);
+		}catch (SQLException e){
+			e.printStackTrace();
+		}try {
+
+
+		pst.setString(1, username1.getText());
+		pst.setString(2,password1.getText());
+		pst.setString(3,getGender());
+		pst.setString(4,adress.getText());
+		pst.setString(5,introduce.getText());
+		pst.executeUpdate();
+		}catch (SQLException e2){
+			e2.printStackTrace();
 		}
-
 
 	}
 	@FXML

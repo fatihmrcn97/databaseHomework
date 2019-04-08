@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="sqljdbc4">
+    <CLASSES>
+      <root url="jar://C:/Microsoft SQL Server JDBC Driver 2.0/sqljdbc_2.0/enu/sqljdbc4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://C:/Microsoft SQL Server JDBC Driver 2.0/sqljdbc_2.0/enu/auth/x64" />
+      <root url="file://C:/Microsoft SQL Server JDBC Driver 2.0/sqljdbc_2.0/enu/xa/x64" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>
