@@ -8,8 +8,8 @@ public class dbConnection {
     public static Connection getConnection(){
 
         try{
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection conn= DriverManager.getConnection("jdbc:sqlserver://localhost:1433;database=JavaProject;integratedSecurity=true;");
+
+            conn= DriverManager.getConnection("jdbc:sqlserver://DESKTOP-KOIP0DP\\FATIHBEY:1433;database=JavaFXhome;user=sa;password=fatkan123");
 
         }catch (Exception e){
             e.printStackTrace();

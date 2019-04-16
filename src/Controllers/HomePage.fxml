@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="494.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML.HomePage">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #1F4E5A;">
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="114.0" layoutX="52.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resim2.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="37.0" layoutY="128.0" text="For Jobs Look Here" textFill="WHITE" />
+            <Label layoutX="27.0" layoutY="165.0" text="MENU" textFill="#1dc69f">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Button layoutX="60.0" layoutY="193.0" mnemonicParsing="false" style="-fx-background-color: #1F4E5A;" text="Jobs" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="60.0" layoutY="231.0" mnemonicParsing="false" style="-fx-background-color: #1F4E5A;" text="Add Job" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="60.0" layoutY="269.0" mnemonicParsing="false" style="-fx-background-color: #1F4E5A;" text="History" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Line endX="71.0" layoutX="101.0" layoutY="325.0" startX="-69.0" stroke="WHITE" />
+            <Button layoutX="36.0" layoutY="418.0" mnemonicParsing="false" style="-fx-background-color: #1F4E5A; -fx-border-color: #ffffff;" text="CONTACT US" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="149.0" layoutY="202.0" prefHeight="21.0" prefWidth="27.0" style="-fx-background-color: #4ab5b5;" text="  0" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="234.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" />
+      <Pane layoutX="493.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" />
+      <Pane layoutX="234.0" layoutY="256.0" prefHeight="200.0" prefWidth="200.0" />
+      <Pane layoutX="493.0" layoutY="256.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label contentDisplay="CENTER" layoutX="709.0" text="...">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

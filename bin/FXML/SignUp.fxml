@@ -19,12 +19,12 @@
             <URL value="@../Controllers/style2.css" />
             <URL value="@../Controllers/style.css" />
          </stylesheets></Button>
-      <RadioButton layoutX="209.0" layoutY="173.0" mnemonicParsing="false" text="Male" textFill="WHITE">
+      <RadioButton fx:id="amale" layoutX="209.0" layoutY="173.0" mnemonicParsing="false" text="Male" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="339.0" layoutY="173.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="112.0" text="Female" textFill="WHITE">
+      <RadioButton fx:id="afemale" layoutX="339.0" layoutY="173.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="112.0" text="Female" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
