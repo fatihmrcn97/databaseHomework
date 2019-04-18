@@ -63,6 +63,7 @@ public class HomePageController implements Initializable {
            fadeIn.setToValue(1);
            fadeIn.setCycleCount(1);
            fadeIn.play();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
