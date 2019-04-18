@@ -2,8 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -51,11 +49,7 @@
          </children>
       </Pane>
       <AnchorPane fx:id="holderPane" layoutX="210.0" layoutY="60.0" prefHeight="426.0" prefWidth="559.0" />
-      <SplitMenuButton fx:id="exit" layoutX="658.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="109.0" text="Exit">
-        <items>
-          <MenuItem fx:id="exit1" mnemonicParsing="false" onAction="#exitProgram" text="Exit" />
-          <MenuItem fx:id="LogOut" mnemonicParsing="false" onAction="#logOutProg" text="Log Out" />
-        </items>
-      </SplitMenuButton>
+      <Button fx:id="ex1" layoutX="603.0" layoutY="14.0" mnemonicParsing="false" onAction="#ex" text="Exit" />
+      <Button fx:id="logO1" layoutX="664.0" layoutY="14.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
    </children>
 </AnchorPane>
