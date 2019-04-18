@@ -10,11 +10,7 @@ import java.util.ResourceBundle;
 
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
-
+import javafx.scene.control.*;
 
 
 import javafx.animation.PauseTransition;
@@ -79,9 +75,25 @@ public class LoginController implements Initializable {
 			while(rs.next()){
 				count++;
 			}if(count==1){
-				System.out.println("Login Succs");
+
+				login.getScene().getWindow().hide();
+				Stage home = new Stage();
+				try {
+					Parent root = FXMLLoader.load(getClass().getResource("/FXML/HomePage.fxml"));
+					Scene scene = new Scene(root);
+					home.setScene(scene);
+					home.show();
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+
+
 			}else {
-				System.out.println("Ussername and Password is not correct");
+				Alert alert = new Alert(Alert.AlertType.ERROR);
+				alert.setHeaderText(null);
+				alert.setContentText("Username or Passaword is not correct");
+				alert.show();
+				progress.setVisible(false);
 			}
 
 		} catch (SQLException e1) {

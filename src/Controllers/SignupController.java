@@ -73,7 +73,7 @@ public class SignupController implements Initializable {
 		PauseTransition pt = new PauseTransition();
 		pt.setDuration(Duration.seconds(3));
 		pt.setOnFinished(e ->{
-			System.out.println("sign up successfuly");
+
 		});
 		pt.play();
 
