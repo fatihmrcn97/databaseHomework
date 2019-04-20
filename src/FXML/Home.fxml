@@ -6,9 +6,8 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="home" prefHeight="426.0" prefWidth="559.0" style="-fx-background-color: #1F4E5A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+<AnchorPane fx:id="home" prefHeight="426.0" prefWidth="559.0" style="-fx-background-color: #1F4E5A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
    <children>
       <Button fx:id="personal" layoutX="55.0" layoutY="47.0" mnemonicParsing="false" onAction="#personalAction" prefHeight="307.0" prefWidth="225.0" style="-fx-background-color: #00FFFF;">
          <font>
@@ -28,11 +27,14 @@
             <Image url="@../../images.jpg" />
          </image>
       </ImageView>
-      <Text layoutX="291.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="               Find a job" wrappingWidth="177.9256116077304">
+      <Label fx:id="name2234" layoutX="105.0" layoutY="261.0" text="Find A Personel">
          <font>
-            <Font name="Calibri" size="18.0" />
-         </font></Text>
-      <Label fx:id="name2234" layoutX="150.0" layoutY="257.0" text="Label" />
-      <Button fx:id="abc" layoutX="135.0" layoutY="370.0" mnemonicParsing="false" onAction="#aaaa" text="Button" />
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="362.0" layoutY="261.0" text="Find A Job">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
