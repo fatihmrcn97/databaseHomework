@@ -60,7 +60,7 @@ public class SignupController implements Initializable {
 		username1.setStyle("-fx-text-inner-color: #a0a2ab");
 		password1.setStyle("-fx-text-inner-color: #a0a2ab");
 		adress.setStyle("-fx-text-inner-color: #a0a2ab");
-		introduce.setStyle("-fx-text-inner-color: #a0a2ab");
+
 		con =new dbConnection();
 
 	}
@@ -79,14 +79,14 @@ public class SignupController implements Initializable {
 
 
 		try {
-			String Insert = "INSERT INTO loginData(username,userpassword,gender,city,introduce)"
-					+"VALUES (?,?,?,?,?)";
+			String Insert = "INSERT INTO credentials1(username,password,gender,email)"
+					+"VALUES (?,?,?,?)";
 		pst=connection.prepareStatement(Insert);
 		pst.setString(1, username1.getText());
 		pst.setString(2,password1.getText());
 		pst.setString(3,getGender());
 		pst.setString(4,adress.getText());
-		pst.setString(5,introduce.getText());
+
 		pst.execute();
 		connection.close();
 		}catch (SQLException e2){

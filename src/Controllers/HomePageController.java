@@ -57,6 +57,7 @@ public class HomePageController implements Initializable {
         try {
 
             AnchorPane home = FXMLLoader.load(getClass().getResource("/FXML/Home.fxml"));
+
            holderPane.getChildren().setAll(home);
            FadeTransition fadeIn = new FadeTransition(Duration.millis(100),home);
            fadeIn.setFromValue(0);
@@ -86,6 +87,8 @@ public class HomePageController implements Initializable {
             login.show();
             login.setResizable(false);
             scene.getStylesheets().add("/Controllers/style.css");
+
+
         }catch (IOException e){
             e.printStackTrace();
         }

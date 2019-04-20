@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="JavaProject@localhost" uuid="72c74f0a-df73-4863-8c32-fdd4dd4fa09a">
+    <data-source source="LOCAL" name="javaFx" uuid="fa7e69ee-0684-4fd0-819f-c9b16151bccf">
       <driver-ref>sqlserver.ms</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
-      <jdbc-url>jdbc:sqlserver://localhost:1433;database=JavaProject</jdbc-url>
+      <jdbc-url>jdbc:sqlserver://DESKTOP-KOIP0DP\FATIHBEY:1433;database=JavaFXhome</jdbc-url>
       <driver-properties>
         <property name="applicationName" value="DataGrip" />
       </driver-properties>

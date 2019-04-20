@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="home" prefHeight="426.0" prefWidth="559.0" style="-fx-background-color: #528b8b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+<AnchorPane fx:id="home" prefHeight="426.0" prefWidth="559.0" style="-fx-background-color: #1F4E5A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
    <children>
-      <Button fx:id="personal" layoutX="55.0" layoutY="47.0" mnemonicParsing="false" onAction="#personalAction" prefHeight="307.0" prefWidth="225.0" style="-fx-background-color: #fff;" />
-      <Button fx:id="job" layoutX="291.0" layoutY="47.0" mnemonicParsing="false" onAction="#jobAction" prefHeight="307.0" prefWidth="225.0" style="-fx-background-color: #fff;" />
+      <Button fx:id="personal" layoutX="55.0" layoutY="47.0" mnemonicParsing="false" onAction="#personalAction" prefHeight="307.0" prefWidth="225.0" style="-fx-background-color: #00FFFF;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="job" layoutX="291.0" layoutY="47.0" mnemonicParsing="false" onAction="#jobAction" prefHeight="307.0" prefWidth="225.0" style="-fx-background-color: #00FFFF;">
+         <font>
+            <Font size="39.0" />
+         </font></Button>
       <ImageView fitHeight="154.0" fitWidth="200.0" layoutX="83.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../personal.png" />
@@ -20,7 +28,11 @@
             <Image url="@../../images.jpg" />
          </image>
       </ImageView>
-      <Text layoutX="90.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Find a personal" wrappingWidth="168.32557498663664" />
-      <Text layoutX="304.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Find a job" wrappingWidth="168.32557498663664" />
+      <Text layoutX="291.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="               Find a job" wrappingWidth="177.9256116077304">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font></Text>
+      <Label fx:id="name2234" layoutX="150.0" layoutY="257.0" text="Label" />
+      <Button fx:id="abc" layoutX="135.0" layoutY="370.0" mnemonicParsing="false" onAction="#aaaa" text="Button" />
    </children>
 </AnchorPane>

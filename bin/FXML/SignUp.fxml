@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="678.0" style="-fx-background-color: #1F4E5A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SignupController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="678.0" style="-fx-background-color: #1F4E5A;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SignupController">
    <children>
       <TextField fx:id="username1" layoutX="201.0" layoutY="70.0" prefHeight="31.0" prefWidth="276.0" promptText="Enter Your Name" />
       <PasswordField fx:id="password1" layoutX="201.0" layoutY="127.0" prefHeight="31.0" prefWidth="276.0" promptText="Enter Your Password" />
@@ -55,6 +55,5 @@
             <URL value="@../Controllers/style2.css" />
             <URL value="@../Controllers/style.css" />
          </stylesheets></Button>
-      <TextField fx:id="introduce" layoutX="135.0" layoutY="292.0" prefHeight="31.0" prefWidth="342.0" promptText="Basic Intruduce Yourself" />
    </children>
 </AnchorPane>

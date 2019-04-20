@@ -65,7 +65,7 @@ public class LoginController implements Initializable {
 			pt.play();
 
 			connection= conn.getConnection();
-			String q1="SELECT * from loginData where username=? and userpassword=?";
+			String q1="SELECT * from credentials1 where username=? and password=?";
 		try {
 			pst=connection.prepareStatement(q1);
 			pst.setString(1,username.getText());
@@ -73,6 +73,7 @@ public class LoginController implements Initializable {
 			ResultSet rs = pst.executeQuery();
 			int count=0;
 			while(rs.next()){
+
 				count++;
 			}if(count==1){
 

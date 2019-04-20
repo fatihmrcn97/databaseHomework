@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="javaFx">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.14">
+    <root id="1">
+      <ServerVersion>14.0.1000</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="AdventureWorks2016CTP3">
+      <ObjectId>16</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="3" parent="1" name="FinalWeak">
+      <ObjectId>14</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="4" parent="1" name="Giris">
+      <ObjectId>5</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="5" parent="1" name="JavaFXhome">
+      <ObjectId>17</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="6" parent="1" name="TSQLclass">
+      <ObjectId>11</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="7" parent="1" name="dbMagaza">
+      <ObjectId>12</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="8" parent="1" name="deneme">
+      <ObjectId>15</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="9" parent="1" name="deneme001">
+      <ObjectId>7</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="10" parent="1" name="egitim">
+      <ObjectId>6</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="11" parent="1" name="hospital">
+      <ObjectId>8</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="12" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="13" parent="1" name="memleketsev">
+      <ObjectId>9</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="14" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="15" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="16" parent="1" name="mydatabase">
+      <ObjectId>13</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="17" parent="1" name="sinav">
+      <ObjectId>10</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <database id="18" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>Turkish_CI_AS</Collation>
+    </database>
+    <schema id="19" parent="5" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="20" parent="5" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="21" parent="5" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="22" parent="5" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="23" parent="5" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="24" parent="5" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="25" parent="5" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="26" parent="5" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="27" parent="5" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="28" parent="5" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="29" parent="5" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2019-04-20.16:17:20.103</IntrospectionTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="30" parent="5" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="31" parent="5" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="32" parent="29" name="credentials1">
+      <ObjectId>997578592</ObjectId>
+      <CreatedTimestamp>2019-04-20.16:03:51.323</CreatedTimestamp>
+      <ModifiedTimestamp>2019-04-20.16:08:02.637</ModifiedTimestamp>
+    </table>
+    <table id="33" parent="29" name="freelancer">
+      <ObjectId>1029578706</ObjectId>
+      <CreatedTimestamp>2019-04-20.16:17:11.927</CreatedTimestamp>
+      <ModifiedTimestamp>2019-04-20.16:17:11.937</ModifiedTimestamp>
+    </table>
+    <table id="34" parent="29" name="ids">
+      <ObjectId>933578364</ObjectId>
+      <CreatedTimestamp>2019-04-20.15:38:49.347</CreatedTimestamp>
+      <ModifiedTimestamp>2019-04-20.15:38:49.350</ModifiedTimestamp>
+    </table>
+    <table id="35" parent="29" name="location_informaton">
+      <ObjectId>949578421</ObjectId>
+      <CreatedTimestamp>2019-04-20.15:39:48.867</CreatedTimestamp>
+      <ModifiedTimestamp>2019-04-20.15:39:48.870</ModifiedTimestamp>
+    </table>
+    <table id="36" parent="29" name="loginData">
+      <ObjectId>901578250</ObjectId>
+      <CreatedTimestamp>2019-04-16.21:40:08.260</CreatedTimestamp>
+      <ModifiedTimestamp>2019-04-16.21:40:08.267</ModifiedTimestamp>
+    </table>
+    <table id="37" parent="29" name="skill">
+      <ObjectId>965578478</ObjectId>
+      <CreatedTimestamp>2019-04-20.15:41:46.503</CreatedTimestamp>
+      <ModifiedTimestamp>2019-04-20.15:41:46.507</ModifiedTimestamp>
+    </table>
+    <table id="38" parent="29" name="university_information">
+      <ObjectId>981578535</ObjectId>
+      <CreatedTimestamp>2019-04-20.15:43:39.510</CreatedTimestamp>
+      <ModifiedTimestamp>2019-04-20.15:43:39.513</ModifiedTimestamp>
+    </table>
+    <column id="39" parent="32" name="user_id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="32" name="username">
+      <Position>2</Position>
+      <DataType>nvarchar(20 char)|0s</DataType>
+    </column>
+    <column id="41" parent="32" name="password">
+      <Position>3</Position>
+      <DataType>nvarchar(20 char)|0s</DataType>
+    </column>
+    <column id="42" parent="32" name="email">
+      <Position>4</Position>
+      <DataType>nvarchar(40 char)|0s</DataType>
+    </column>
+    <column id="43" parent="32" name="gender">
+      <Position>5</Position>
+      <DataType>nchar(10 char)|0s</DataType>
+    </column>
+    <index id="44" parent="32" name="PK_credentials1">
+      <Position>1</Position>
+      <ColNames>user_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="45" parent="32" name="PK_credentials1">
+      <ObjectId>1013578649</ObjectId>
+      <CreatedTimestamp>2019-04-20.16:03:51.327</CreatedTimestamp>
+      <ModifiedTimestamp>2019-04-20.16:03:51.327</ModifiedTimestamp>
+      <ColNames>user_id</ColNames>
+      <UnderlyingIndexName>PK_credentials1</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="46" parent="33" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="33" name="name">
+      <Position>2</Position>
+      <DataType>nvarchar(20 char)|0s</DataType>
+    </column>
+    <column id="48" parent="33" name="skill_id">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="49" parent="33" name="wage">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="50" parent="33" name="PK_freelancer">
+      <Position>1</Position>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="51" parent="33" name="PK_freelancer">
+      <ObjectId>1045578763</ObjectId>
+      <CreatedTimestamp>2019-04-20.16:17:11.930</CreatedTimestamp>
+      <ModifiedTimestamp>2019-04-20.16:17:11.930</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK_freelancer</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="52" parent="34" name="user_id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="53" parent="34" name="skill_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="54" parent="35" name="city">
+      <Position>1</Position>
+      <DataType>nvarchar(30 char)|0s</DataType>
+    </column>
+    <column id="55" parent="35" name="address">
+      <Position>2</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+    </column>
+    <column id="56" parent="35" name="user_id">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="57" parent="36" name="username">
+      <Position>1</Position>
+      <DataType>nchar(10 char)|0s</DataType>
+    </column>
+    <column id="58" parent="36" name="userpassword">
+      <Position>2</Position>
+      <DataType>nchar(10 char)|0s</DataType>
+    </column>
+    <column id="59" parent="36" name="gender">
+      <Position>3</Position>
+      <DataType>nchar(10 char)|0s</DataType>
+    </column>
+    <column id="60" parent="36" name="city">
+      <Position>4</Position>
+      <DataType>nchar(10 char)|0s</DataType>
+    </column>
+    <column id="61" parent="36" name="introduce">
+      <Position>5</Position>
+      <DataType>nchar(10 char)|0s</DataType>
+    </column>
+    <column id="62" parent="37" name="skill_id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="63" parent="37" name="skill">
+      <Position>2</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+    </column>
+    <column id="64" parent="38" name="user_id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="65" parent="38" name="department">
+      <Position>2</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+    </column>
+    <column id="66" parent="38" name="university">
+      <Position>3</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+    </column>
+  </database-model>
+</dataSource>

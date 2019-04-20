@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="JavaProject@localhost" uuid="72c74f0a-df73-4863-8c32-fdd4dd4fa09a">
+    <data-source name="javaFx" uuid="fa7e69ee-0684-4fd0-819f-c9b16151bccf">
       <database-info product="Microsoft SQL Server" version="14.00.1000" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 7.0 for SQL Server" driver-version="7.0.0.0" dbms="MSSQL" exact-version="14.0.1000" exact-driver-version="7.0">
         <extra-name-characters>$#@</extra-name-characters>
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="mıxed" quoted-identifiers="mıxed" />
       <secret-storage>master_key</secret-storage>
-      <domain-auth>true</domain-auth>
+      <user-name>sa</user-name>
       <introspection-schemas>@:@</introspection-schemas>
     </data-source>
   </component>
