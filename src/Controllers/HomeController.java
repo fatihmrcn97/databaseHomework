@@ -7,13 +7,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.control.Button;
 import javafx.util.Duration;
 
 import java.net.URL;
-import java.util.ResourceBundle;
 
 public class HomeController implements Initializable {
 

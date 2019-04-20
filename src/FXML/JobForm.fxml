@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML.JobForm">
+   <children>
+      <AnchorPane layoutX="-8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="678.0" style="-fx-background-color: #1F4E5A;">
+         <children>
+            <Pane layoutX="174.0" layoutY="42.0" prefHeight="382.0" prefWidth="347.0" style="-fx-background-color: #87CEFA;" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="174.0" AnchorPane.rightAnchor="157.0" AnchorPane.topAnchor="42.0">
+               <children>
+                  <PasswordField fx:id="password1" layoutX="26.0" layoutY="114.0" prefHeight="31.0" prefWidth="276.0" promptText="Enter Your Job Description" />
+                  <TextField fx:id="adress" layoutX="26.0" layoutY="160.0" prefHeight="31.0" prefWidth="276.0" promptText="Wanted Skills" />
+                  <TextField fx:id="username1" layoutX="27.0" layoutY="67.0" prefHeight="31.0" prefWidth="276.0" promptText="Enter Job Title" />
+                  <Label layoutX="129.0" layoutY="24.0" prefHeight="31.0" prefWidth="115.0" text="Job From">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="signup" layoutX="253.0" layoutY="355.0" mnemonicParsing="false" onAction="#signUP" prefHeight="52.0" prefWidth="172.0" style="-fx-background-color: #069688;" text=" Create Job Form">
+               <stylesheets>
+                  <URL value="@../Controllers/style2.css" />
+                  <URL value="@../Controllers/style.css" />
+               </stylesheets>
+            </Button>
+            <TextField fx:id="introduce" layoutX="201.0" layoutY="248.0" prefHeight="31.0" prefWidth="276.0" promptText="Enter Price" />
+            <TextField fx:id="introduce1" layoutX="201.0" layoutY="302.0" prefHeight="31.0" prefWidth="276.0" promptText="Enter Phone Number" />
+            <ImageView fitHeight="131.0" fitWidth="153.0" layoutX="14.0" layoutY="42.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="42.0">
+               <image>
+                  <Image url="@../../jobfind.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
