@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="426.0" prefWidth="559.0" style="-fx-background-color: #1F4E5A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomePageController">
+   <children>
+      <Button layoutX="411.0" layoutY="126.0" mnemonicParsing="false" onAction="#hired" prefHeight="174.0" prefWidth="139.0" style="-fx-background-color: #00FFFF;" />
+      <ImageView fx:id="imagePerson1" fitHeight="137.0" fitWidth="114.0" layoutX="424.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../default-person.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableP" layoutX="14.0" layoutY="46.0" onMouseClicked="#displaySelected" prefHeight="335.0" prefWidth="392.0" stylesheets="@../Controllers/style3.css">
+        <columns>
+          <TableColumn fx:id="nameP" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="surnameP" prefWidth="75.0" text="Surname" />
+            <TableColumn fx:id="skillP" prefWidth="75.0" text="Skills" />
+            <TableColumn fx:id="phoneP" prefWidth="75.0" text="phoneN" />
+            <TableColumn fx:id="univerP" prefWidth="91.0" text="University" />
+        </columns>
+      </TableView>
+      <Button fx:id="hideP" layoutX="440.0" layoutY="362.0" mnemonicParsing="false" onAction="#shopP" stylesheets="@../Controllers/style3.css" text=" List All">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TextField fx:id="screen" layoutX="430.0" layoutY="237.0" mouseTransparent="true" prefHeight="58.0" prefWidth="102.0" style="-fx-background-color: #00FFFF;" />
+   </children>
+</AnchorPane>

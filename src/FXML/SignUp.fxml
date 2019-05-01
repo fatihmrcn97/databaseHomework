@@ -10,51 +10,65 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="678.0" style="-fx-background-color: #1F4E5A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SignupController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="678.0" style="-fx-background-color: #1F4E5A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SignupController">
    <children>
-      <TextField fx:id="username1" layoutX="201.0" layoutY="70.0" prefHeight="31.0" prefWidth="276.0" promptText="Enter Your Name" />
-      <PasswordField fx:id="password1" layoutX="201.0" layoutY="127.0" prefHeight="31.0" prefWidth="276.0" promptText="Enter Your Password" />
-      <Button fx:id="signup" layoutX="253.0" layoutY="349.0" mnemonicParsing="false" onAction="#signUP" prefHeight="52.0" prefWidth="172.0" style="-fx-background-color: #069688;" text="Sign UP">
+      <TextField fx:id="username1" layoutX="234.0" layoutY="175.0" prefHeight="31.0" prefWidth="276.0" promptText="Enter Your Name" />
+      <PasswordField fx:id="password1" layoutX="234.0" layoutY="232.0" prefHeight="31.0" prefWidth="276.0" promptText="Enter Your Password" />
+      <Button fx:id="signup" layoutX="298.0" layoutY="436.0" mnemonicParsing="false" onAction="#signUP" prefHeight="52.0" prefWidth="112.0" style="-fx-background-color: #069688;" text="Sign UP">
          <stylesheets>
             <URL value="@../Controllers/style2.css" />
             <URL value="@../Controllers/style.css" />
          </stylesheets></Button>
-      <RadioButton layoutX="209.0" layoutY="173.0" mnemonicParsing="false" text="Male" textFill="WHITE">
+      <RadioButton fx:id="amale" layoutX="242.0" layoutY="278.0" mnemonicParsing="false" text="Male" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="339.0" layoutY="173.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="112.0" text="Female" textFill="WHITE">
+      <RadioButton fx:id="afemale" layoutX="372.0" layoutY="278.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="112.0" text="Female" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
       </RadioButton>
-      <TextField fx:id="adress" layoutX="201.0" layoutY="225.0" prefHeight="31.0" prefWidth="276.0" promptText="Adress" />
-      <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="136.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+      <TextField fx:id="adress" layoutX="234.0" layoutY="330.0" prefHeight="31.0" prefWidth="276.0" promptText="Email" />
+      <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="169.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="137.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="170.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../indir.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="136.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="169.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../location.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="136.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="169.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../Gender.png" />
          </image>
       </ImageView>
-      <Button fx:id="login" layoutX="560.0" layoutY="18.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="52.0" prefWidth="83.0" style="-fx-background-color: #069688;" text="Login">
+      <Button fx:id="login" layoutX="581.0" layoutY="14.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="52.0" prefWidth="83.0" style="-fx-background-color: #069688;" text="Login">
          <stylesheets>
             <URL value="@../Controllers/style2.css" />
             <URL value="@../Controllers/style.css" />
          </stylesheets></Button>
-      <TextField fx:id="introduce" layoutX="135.0" layoutY="292.0" prefHeight="31.0" prefWidth="342.0" promptText="Basic Intruduce Yourself" />
+      <TextField fx:id="location" layoutX="234.0" layoutY="381.0" prefHeight="31.0" prefWidth="276.0" promptText="Location" />
+      <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="169.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../indir111.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="browser" layoutX="285.0" layoutY="32.0" mnemonicParsing="false" onAction="#browseronAction" prefHeight="124.0" prefWidth="119.0">
+         <graphic>
+            <ImageView fx:id="pictUser" fitHeight="119.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../default-person.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>
